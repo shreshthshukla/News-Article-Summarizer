@@ -94,21 +94,6 @@ news-summarizer/
 
 ---
 
-## 🔮 Future Improvements
-
-* Add support for multiple languages
-* Improve summary using advanced ML models (like transformers)
-* Add file export (PDF/Text)
-* Enhance UI design
-
----
-
-## 🙌 Contributing
-
-Feel free to fork this repository and improve the project!
-
----
-
 ## 📄 License
 
 This project is open-source and free to use.
