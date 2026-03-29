@@ -1,0 +1,170 @@
+# 📘 PROJECT REPORT
+
+## 📰 News Article Summarizer
+
+---
+
+## 1. 📌 Introduction
+
+In today’s digital world, people consume a large amount of news daily. Reading full articles can be time-consuming. This project, **News Article Summarizer**, is designed to automatically extract and summarize news articles from a given URL, helping users quickly understand the key points.
+
+The application uses Natural Language Processing (NLP) techniques to generate concise summaries and presents them through a simple graphical user interface (GUI).
+
+---
+
+## 2. 🎯 Objectives
+
+* To develop a Python-based application that summarizes news articles
+* To extract article content from URLs automatically
+* To implement NLP techniques for text summarization
+* To build an interactive GUI for user-friendly experience
+
+---
+
+## 3. 🛠️ Technologies Used
+
+| Technology  | Purpose                          |
+| ----------- | -------------------------------- |
+| Python      | Core programming language        |
+| Tkinter     | GUI development                  |
+| Newspaper3k | Extracting article content       |
+| NLTK        | Text processing and tokenization |
+
+---
+
+## 4. 🧠 Methodology
+
+The project follows these steps:
+
+1. **Input Collection**
+   User enters a news article URL in the GUI.
+
+2. **Article Extraction**
+   Using Newspaper3k:
+
+   * Download article
+   * Parse content
+   * Extract title and text
+
+3. **Text Processing**
+
+   * Tokenize text into sentences
+   * Convert text to lowercase
+   * Remove unnecessary characters
+
+4. **Frequency Analysis**
+
+   * Count frequency of each word
+   * Score sentences based on word importance
+
+5. **Summary Generation**
+
+   * Rank sentences
+   * Select top N sentences (default = 3)
+   * Combine into final summary
+
+6. **Output Display**
+
+   * Show article title
+   * Display summarized content in GUI
+
+---
+
+## 5. 🖥️ System Architecture
+
+```
+User Input (URL)
+        ↓
+Article Extraction (Newspaper3k)
+        ↓
+Text Processing (NLTK)
+        ↓
+Frequency Analysis
+        ↓
+Sentence Ranking
+        ↓
+Summary Output (GUI)
+```
+
+---
+
+## 6. 📂 Project Structure
+
+```
+news-summarizer/
+│
+├── main.py          # Main application code
+├── README.md        # Documentation
+```
+
+---
+
+## 7. ⚙️ Working of the Application
+
+* The GUI allows users to input a URL
+* When the "Summarize" button is clicked:
+
+  * The article is fetched
+  * Text is analyzed
+  * Summary is generated
+* The result is displayed instantly
+* The "Clear" button resets all fields
+
+---
+
+## 8. 📸 Features
+
+* Simple and intuitive interface
+* Fast summary generation
+* Automatic article extraction
+* Scrollable summary view
+* Error handling for invalid URLs
+
+---
+
+## 9. ⚠️ Limitations
+
+* Depends on internet connection
+* Some websites block scraping
+* Summary is extractive (not AI-generated)
+* Limited customization of summary length
+
+---
+
+## 10. 🔮 Future Enhancements
+
+* Use advanced AI models (BERT, GPT) for better summaries
+* Add multi-language support
+* Export summary to PDF/Text file
+* Improve UI design with modern frameworks
+* Add voice-based input/output
+
+---
+
+## 11. 📊 Applications
+
+* Quick news reading
+* Academic research
+* Content summarization tools
+* Journalism and media analysis
+
+---
+
+## 12. ✅ Conclusion
+
+The News Article Summarizer successfully demonstrates how NLP can be used to reduce reading time and extract important information from large texts. It provides a practical solution for users who want quick insights from news articles using a simple and efficient interface.
+
+---
+
+## 13. 📚 References
+
+* Python Documentation
+* NLTK Documentation
+* Newspaper3k Library
+* NLP Concepts
+
+---
+
+## 👨‍💻 Author
+
+Developed as part of a BYOP (Bring Your Own Project) to explore Python, GUI development, and Natural Language Processing.
